@@ -1,11 +1,12 @@
+// NPM imports
 import React from 'react';
-
 import { useState }  from 'react';
 import { AsyncTypeahead } from 'react-bootstrap-typeahead';
-
 import fetch from 'isomorphic-fetch';
 
+// styles imports
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import './search.css';
 
 
 const PER_PAGE = 50;
@@ -86,8 +87,9 @@ function Search () {
     return(
         <div className="search-content">
     
-            <label>Recherche par ville</label>
+            <label className="search-label">Entrez le nom d'une ville</label>
             <AsyncTypeahead
+                className="search-input"
                 isLoading={isLoading}
                 options={options}
                 query={query}

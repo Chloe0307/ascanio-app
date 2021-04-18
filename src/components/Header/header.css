@@ -1,0 +1,24 @@
+
+.header-content{
+    background-color: #2ac0cc;
+    display: flex;
+    border: 3px solid #fabb3a;
+    border-radius: 40px;
+    margin-bottom: 3rem;
+
+}
+
+.ascanio-logo{
+    width: 90px;
+    margin-right: 2rem;
+    padding: 10px 0 10px 20px;
+   
+    
+}
+
+.header-title{
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+}
+
+
