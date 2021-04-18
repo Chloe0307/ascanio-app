@@ -1,0 +1,55 @@
+.createList-content {
+    margin: 0 0 3rem 3rem;
+
+}
+
+.list-title{
+    text-decoration: underline;
+}
+
+
+.add-town-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 400px;
+}
+
+.create-list{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title-label{
+    font-weight: bold;
+    margin-right: 42px;
+}
+.title-input{
+    width: 200px;
+    margin-left: 5px;;
+}
+
+.choice-towns{
+    display: flex;
+}
+
+.list-label{
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.list-select{
+    width: 209px;
+    align-items: flex-end;
+    margin-left: 75px;
+}
+
+.list-button{
+    width: 200px;
+    height: 4vh;
+    border: 1px solid #2ac0cc;
+    border-radius: 40px;
+    margin: 25px 0 0 100px;
+    font-weight: bold;
+    background-color: #fabb3a;
+}

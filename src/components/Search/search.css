@@ -1,14 +1,16 @@
 .search-content {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    margin: 0 0 3rem 3rem;
     width: 300px;
 }
 
 .search-label{
     width: 300px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 .search-input{
