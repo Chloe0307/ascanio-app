@@ -18,6 +18,7 @@
 .create-list{
     display: flex;
     margin-bottom: 20px;
+    margin-top: 2rem;
 }
 
 .title-label{
@@ -29,22 +30,7 @@
     margin-left: 5px;;
 }
 
-.choice-towns{
-    display: flex;
-}
-
-.list-label{
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.list-select{
-    width: 209px;
-    align-items: flex-end;
-    margin-left: 75px;
-}
-
-.list-button{
+.save-button{
     width: 200px;
     height: 4vh;
     border: 1px solid #2ac0cc;

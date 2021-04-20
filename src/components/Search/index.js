@@ -46,7 +46,7 @@ function Search () {
 
     const _handlePagination = (e, shownResults) => {
         const cachedQuery = _cache[query];
-        console.log("ckjdshbcyu");
+        // console.log("ckjdshbcyu");
 
 
         if (
@@ -69,8 +69,8 @@ function Search () {
     };
 
     const _handleSearch = query => {
-        console.log("oiugb");
-        console.log(query);
+        // console.log("oiugb");
+        // console.log(query);
         if (_cache[query]) {
           setOptions( _cache[query].options );
           return;
@@ -87,7 +87,7 @@ function Search () {
     return(
         <div className="search-content">
     
-            <label className="search-label">Entrez le nom d'une ville</label>
+            <label className="search-label">Ville</label>
             <AsyncTypeahead
                 className="search-input"
                 isLoading={isLoading}
@@ -119,8 +119,7 @@ function Search () {
                 useCache={false}
             />
     </div>
-
-    )
+  )
 }
 
 export default Search;

@@ -3,7 +3,6 @@ import React from 'react';
 
 // Components imports 
 import Header from '../Header';
-import Search from '../Search';
 import CreateList from '../CreateList';
 
 // Styles imports
@@ -16,7 +15,6 @@ function App() {
     <div className="app-content">
       <Header />
       <CreateList />
-      <Search />
     </div>
 
   );
