@@ -82,7 +82,8 @@ function Search () {
     console.log(query[0].nom, "ola");
     const queryValue = query[0].nom;
     setQuery(queryValue);
-
+    const towns = []
+    towns.push(queryValue)
     console.log(queryValue, "yes");
   };
 

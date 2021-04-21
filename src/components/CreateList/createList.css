@@ -30,7 +30,7 @@
     margin-left: 5px;;
 }
 
-.save-button{
+.create-button{
     width: 140px;
     height: 4vh;
     border: 1px solid #2ac0cc;
@@ -41,10 +41,11 @@
 }
 
 .list-result__empty {
-    border: none;
+    visibility: hidden;
 }
 
 .list-result{
+    visibility: visible;
     width: 200px;
     border: 1px solid #2ac0cc;
     border-radius: 20px;
@@ -55,4 +56,20 @@
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.towns-result {
+    list-style: none;
+    padding: 20px;
+  }
+
+
+.save-button {
+    font-weight: bold;
+    background-color: #fabb3a;
+    width: 140px;
+    height: 4vh;
+    border: 1px solid #2ac0cc;
+    border-radius: 40px;
+    margin: 10px 0 10px 30px;
 }
