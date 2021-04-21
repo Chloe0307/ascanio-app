@@ -31,11 +31,28 @@
 }
 
 .save-button{
-    width: 200px;
+    width: 140px;
     height: 4vh;
     border: 1px solid #2ac0cc;
     border-radius: 40px;
-    margin: 25px 0 0 100px;
+    margin-top: 30px;
     font-weight: bold;
     background-color: #fabb3a;
+}
+
+.list-result__empty {
+    border: none;
+}
+
+.list-result{
+    width: 200px;
+    border: 1px solid #2ac0cc;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.title-result{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
