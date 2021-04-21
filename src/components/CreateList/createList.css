@@ -40,6 +40,11 @@
     background-color: #fabb3a;
 }
 
+.see-list{
+    color: #2ac0cc;
+    margin-left : 40px;
+}
+
 .list-result__empty {
     visibility: hidden;
 }

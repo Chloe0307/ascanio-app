@@ -11,7 +11,7 @@ import './createList.css';
 function CreateList ({ onChange }) {
 
     const [ title, setTitle ] = useState('')
-
+    
     const handleGetTitle = (e, func) => {
         func(e.target.value)
     }
@@ -32,6 +32,15 @@ function CreateList ({ onChange }) {
         console.log(queryValue, 'createList')      
     }
 
+    const handleSubmitList = () => {
+        const ref = firebase.database().ref('list')
+        const list = {
+            title
+        }
+
+        ref.push(list)
+    }
+
     return(
         <div className="createList-content">
             <h3 className="list-title">Création d'une zone</h3>
@@ -42,11 +51,14 @@ function CreateList ({ onChange }) {
                 </div>
                 <Search className='search-input' onChange={onChange} />
                 <img></img>
-                <button className="create-button" onClick={handleCreateList}>Créer</button>
+                <div>
+                    <button className="create-button" onClick={handleCreateList}>Créer</button>
+                    <a href="/my-list" className="see-list">Voir mes listes</a>
+                </div>
             </form>
             <div className="list-result__empty">
                 <p className="title-result"></p>
-                <button className="save-button" >Sauvegarder</button>
+                <button className="save-button" onClick={handleSubmitList}>Sauvegarder</button>
             </div>
         </div>
     )
