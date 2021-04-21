@@ -43,7 +43,10 @@ function CreateList ({ onChange }) {
 
     return(
         <div className="createList-content">
-            <h3 className="list-title">Création d'une zone</h3>
+            <div className="title-container">
+                <a href="/" className="list-title">Création d'une zone</a>
+                <a href="/my-list" className="see-list">Voir mes listes</a>
+            </div>
             <form className="add-town-content">
                 <div className="create-list">
                     <label className="title-label">Nom de la zone</label>
@@ -51,10 +54,7 @@ function CreateList ({ onChange }) {
                 </div>
                 <Search className='search-input' onChange={onChange} />
                 <img></img>
-                <div>
-                    <button className="create-button" onClick={handleCreateList}>Créer</button>
-                    <a href="/my-list" className="see-list">Voir mes listes</a>
-                </div>
+                <button className="create-button" onClick={handleCreateList}>Créer</button>
             </form>
             <div className="list-result__empty">
                 <p className="title-result"></p>

@@ -3,9 +3,25 @@
 
 }
 
-.list-title{
-    text-decoration: underline;
+.title-container{
+    display: flex;
 }
+
+.list-title{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.see-list{
+    color: black;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
 
 
 .add-town-content{
@@ -40,10 +56,7 @@
     background-color: #fabb3a;
 }
 
-.see-list{
-    color: #2ac0cc;
-    margin-left : 40px;
-}
+
 
 .list-result__empty {
     visibility: hidden;
