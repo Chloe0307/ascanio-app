@@ -4,3 +4,22 @@
     font-family: 'Zen Dots', cursive;
 
 }
+
+.div-list{
+    display: flex;
+}
+
+.list-li{
+    margin: 0 20px 10px 0;
+    list-style: none;
+}
+
+.delete-button{
+    width: 20px;
+    border: none;
+}
+
+.delete-img{
+    width: 15px;
+   
+}

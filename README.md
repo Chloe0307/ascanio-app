@@ -30,3 +30,12 @@ Troisième étape :
 
 https://codesandbox.io/s/keen-breeze-j6sf6?file=/src/components/Search/index.js:2336-2404
 
+Quatrième étape : 
+
+J'ai installé et initialisé firebase dans un répertoire utils>firebase.js pour la sauvegarde des listes des utilisateurs.
+
+Création d'une fonction qui envoie les datas en bdd.
+
+installation react router dom pour accéder à la liste des zones créées par les utilisateurs. 
+
+mise en place d'un bouton de suppresion

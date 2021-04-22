@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import firebase from 'firebase';
 
 import './list.css'
+import DeleteButton from '../../assets/images/delete-button.png'
+
+
 
 function List () {
 
@@ -27,7 +30,10 @@ function List () {
         loadDatas()
     }, [])
 
-
+    const handleRemove = async (e, elt) => {
+        console.log('je suis la', elt)
+        
+    }
 
 
     return(
@@ -37,7 +43,14 @@ function List () {
             <ul>
                 {
                     lists.map((list) => {
-                        return(<li key={list.key}>{list.title}</li>
+                        return(
+                            <div className="div-list">
+                                <li className="list-li" key={list.key}>{list.title}</li>
+                                <button className="delete-button" onClick={(e) => handleRemove()}>
+                                    <img  className="delete-img" src={DeleteButton} alt="suppression de la zone"></img>
+                                </button>
+                            </div>
+                        
                         )
                     })
                 }
